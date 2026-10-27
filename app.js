@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
 // Task2: create mongoDB connection 
 
 // Put your Atlas connection string in .env as MONGO_URI (see .env.example)
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<username>:<password>@<cluster>.mongodb.net/employeeDB?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://user:1234abc@cluster0.ivnoxdw.mongodb.net/employeeDB?retryWrites=true&w=majority';
 
 mongoose
   .connect(MONGO_URI)
